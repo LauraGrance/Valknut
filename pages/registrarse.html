@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html lang="es">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Valknut | Registrarse</title>
+      <script src="https://kit.fontawesome.com/e9e0f99ce5.js" crossorigin="anonymous"></script>
+      <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+      <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="../css/estilos.css">
+
+  </head>
+
+  <body>
+
+    <header id="header" class="header">
+            
+      <div class="logo">
+        <a href="../index.html" class="logo">
+          <img src="../assets/img/logoblanco.png" alt="logo imagen" width="80" loading="lazy">
+      </a>
+      </div>
+
+      <div class="nombre">
+        <h1>VALKNUT</h1>
+      </div> 
+
+        <nav>
+            <ul>
+                
+              <li>
+                <a href="../pages/galeria.html">Galeria</a>
+              </li>
+              <li>
+                <a href="../pages/contacto.html">Contacto</a>
+              </li>
+              <li>
+                <a href="../pages/registrarse.html">Registrarse</a>
+              </li>
+              
+            </ul>
+
+        </nav>
+
+    </header>
+    <main>
+      <section class="registrarse">
+        <h1>Registrarse</h1>
+        <form class="formBuscar" validar.php" method="post">
+          <div >
+            <label class="label" for="name">Ingrese su Nombre:</label>
+            <input type="text" name="nombre" id="name" placeholder="Nombre" required>
+          </div>
+          <div>
+            <label class="label"for="apellido">Ingrese su apellido:</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+          </div>
+          <div>
+            <label class="label" for="email">Ingrese su email:</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+          </div>
+          <div>
+            <label class="label" for="password">Ingrese su contraseña:</label>
+            <input type="password" name="password" id="password" placeholder="Contraseña" required>
+          </div>
+          <div>
+            <label class="label" for="">Ingrese su fecha de nacimiento:</label>
+            <input type="date" name="nacimiento" id="nacimiento">
+          </div>
+          <div>
+            <label class="label" for="">Ingrese País:</label>
+            <select name="pais" id="pais" size="1" multiple>
+              <option value="AR"selected>Argentina</option>
+              <option value="BR">Brasil</option>
+              <option value="CL">Chile</option>
+              <option value="UY">Uruguay</option>
+            </select>
+          </div>
+          <div>
+            <label class="label" for="terminos">Acepte terminos y condiciones</label>
+            <input type="checkbox" name="terminos" id="terminos" required>        
+          </div>
+          <div>
+            <textarea name="comentario" id="comentario" cols="70" rows="10" placeholder="Comentario"></textarea>
+          </div>
+          <div class="">
+            <input type="reset" class="boton">
+            <input type="submit" value="Registrarme" class="boton">  
+          </div>
+        </form>
+      </section>
+    </main>
+    
+    <footer>
+      <a href="https://web.whatsapp.com/" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <nav class="terminos">
+        <ul>
+          <li>
+            <a href="../pages/contacto.html">Contacto</a>
+          </li>
+          <li>
+            <a href="../pages/preguntas.html">Preguntas Frecuentes</a>
+          </li>
+          <li>
+            <a href="">Administrador</a>
+          </li>
+        </ul>
+      </nav>
+        <a href="#header">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      <section class="terminos">
+        <p>Todos los derechos reservados</p>
+      </section>
+    </footer>
+          
+  </body>
+</html>
