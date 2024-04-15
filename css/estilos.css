@@ -39,7 +39,7 @@ body{
 
     .header{
         background-image: linear-gradient(to right, #000000, #090405, #100908, #150d0a, #19110b, #23180f, #2c2011, #352812, #493614, #5e4616, #735616, #896616);
-        height: 20vh;
+        height: 15vh;
         position:sticky;
         top: 0;
         z-index: 10;
@@ -52,8 +52,12 @@ body{
             padding: 1rem 0;
            
             .logonombre{
-                text-decoration: none;  
-                font-size: 1rem;  
+                text-decoration: none;
+                display: flex; 
+                .logo{
+                   width: 110px;
+                   height: 110px; 
+                }
             }
             .nombre{
                 align-content: center;
@@ -126,7 +130,7 @@ body{
             background-position: center;
             background-repeat: no-repeat;
             align-items: center;   
-            min-height: 80vh; 
+            min-height: 85vh; 
             text-align: center;
         }
     
@@ -456,18 +460,37 @@ body{
             padding: 10px;
         }
     } 
-    @media screen and (width-max: 992px){
-        
-        .main{
-            h1{
-                font-size: 2rem;
-
-
+    @media (max-width: 768px) {
+        .header{
+            height: initial;
+            nav{
+                margin-left:10px;
+                margin-right: 10px;
+                flex-direction: column;
+                row-gap: 20px;
+                .logonombre{
+                    
+                    font-weight:700;
+                .nombre{
+                    font-size: 1rem;
+                }
+                }
+                .listanav{
+                   
+                    padding:initial;
+                    .ul{
+                        .a{
+                            font-weight: 400;
+                            margin-right: initial;
+                            font-size: 1rem;
+                            padding: 0.2rem;
+                            
+                        }
+                      
+                    }
+                }
             }
-        } 
-    
+        }
     }
-
-
 
 }
