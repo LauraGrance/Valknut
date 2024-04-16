@@ -56,7 +56,7 @@ body{
                 display: flex; 
                 .logo{
                    width: 110px;
-                   height: 110px; 
+                   height: 10px; 
                 }
             }
             .nombre{
@@ -463,18 +463,24 @@ body{
     @media (max-width: 768px) {
         .header{
             height: initial;
+            min-height: 25vh;
             nav{
                 margin-left:10px;
-                margin-right: 10px;
+                margin-right: 5px;
                 flex-direction: column;
-                row-gap: 20px;
+                row-gap: 15px;
                 .logonombre{
-                    
-                    font-weight:700;
+                    text-decoration: none;
+                    display: flex; 
+                    .logo{
+                       width: 70px;
+                       height: 70px; 
+                    }             
+                }
                 .nombre{
-                    font-size: 1rem;
+                    font-size:15px;
                 }
-                }
+
                 .listanav{
                    
                     padding:initial;
@@ -482,7 +488,7 @@ body{
                         .a{
                             font-weight: 400;
                             margin-right: initial;
-                            font-size: 1rem;
+                            font-size:10px;
                             padding: 0.2rem;
                             
                         }
@@ -490,6 +496,87 @@ body{
                     }
                 }
             }
+        }
+        main{
+            h1{
+                font-size: 2rem;
+                font-weight: 800;
+                padding-top: 80px;
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+            
+            h2{
+                font-size: 1.5rem;
+                font-weight: 400;
+                padding: 30px;
+            }
+    
+            h3{
+                margin-right: 20px;
+                margin-left: 20px;
+                margin-top: 5px;
+                margin-bottom: 5px; 
+                font-size: 1.3rem;
+ 
+            }
+            .principal{
+                
+                min-height: 75vh; 
+                text-align: center;
+            }
+            .buscador{
+ 
+                
+                height: 20vh;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+    
+                .cuadrotex{
+                    border: 2px solid white;
+                    border-radius: 25px;
+                    font-size: 1rem;
+                    height: 30px;
+                    width: 300px;
+                    margin: 10px 0px;
+                    outline: none;
+                    padding: 0px 20px;
+                    
+                }
+                .boton{
+                    background-color:#161616;
+                    display: inline-block;
+                    color:#ffffff;
+                    height: 25px;
+                    margin: 20px 10px;
+                    padding:0 20px;
+                    border-radius: 25px;
+                    font-family: "Dancing";
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    border: 2px solid white;
+                    text-align: center;
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    &:hover {
+                        background-color: #5f442a;
+                        transform: scale(0.95);
+                        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+                    }
+                }   
+                    
+            
+                .formBuscar{
+                    margin-top: 10px;             
+                    text-align: center;
+                    color: rgb(153, 75, 75);
+                }
+                
+            
+            }
+
+
+        
         }
     }
 
