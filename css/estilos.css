@@ -464,7 +464,7 @@ body{
     @media (max-width: 768px) {
         .header{
             height: initial;
-            min-height: 25vh;
+            min-height: 30vh;
             nav{
                 margin-left:10px;
                 margin-right: 5px;
@@ -479,7 +479,7 @@ body{
                     }             
                 }
                 .nombre{
-                    font-size:15px;
+                    font-size:12px;
                 }
 
                 .listanav{
@@ -500,8 +500,8 @@ body{
         }
         main{
             h1{
-                display: inline-block;
-                font-size: 2rem;
+
+                font-size: 1.5rem;
                 font-weight: 800;
                 padding-top: 100px;
                 padding-bottom: 150px;
