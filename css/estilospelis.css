@@ -186,7 +186,7 @@ body{
             font-weight: 700;
             margin-bottom: 1rem;
         }
-        .buscadorPeliculas {
+        .buscadorPeliculas{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -385,7 +385,7 @@ body{
             }
         }
         .buscadorPrincipal{
-            height: 30vh;
+            height: 40vh;
             .tituloSection{
                 font-size: 1.6rem;
             }

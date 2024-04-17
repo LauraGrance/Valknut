@@ -130,7 +130,7 @@ body{
             background-position: center;
             background-repeat: no-repeat;
             align-items: center;   
-            min-height: 85vh; 
+            height: 800px; 
             text-align: center;
         }
     
@@ -182,7 +182,6 @@ body{
             }
         .lasmas{
             background-image: linear-gradient(to right top, #000000, #010100, #010101, #020201, #020202); 
-
             text-align: center;
             min-height: 90vh;
 
@@ -466,20 +465,23 @@ body{
             height: initial;
             min-height: 30vh;
             nav{
-                margin-left:10px;
+                margin-left:5px;
                 margin-right: 5px;
                 flex-direction: column;
-                row-gap: 15px;
+                row-gap: 10px;
                 .logonombre{
                     text-decoration: none;
                     display: flex; 
-                    .logo{
-                       width: 70px;
-                       height: 70px; 
-                    }             
+                   .logo{
+                        width: 40px;
+                        height: 40px;
+                        padding: 5px;
+                   }
+                     
                 }
                 .nombre{
-                    font-size:12px;
+                    h1{font-size:35px;
+                    }
                 }
 
                 .listanav{
@@ -499,53 +501,55 @@ body{
             }
         }
         main{
-            h1{
-
-                font-size: 1.5rem;
-                font-weight: 800;
-                padding-top: 100px;
-                padding-bottom: 150px;
-                padding-right: 30px;
-                padding-left: 30px;
-            }
-            
-            h2{
-                display: inline-block;
-                font-size: 1.9rem;
-                width: 400px;
-                height: 400px;
-                padding: 10px;
-            }
-    
-            h3{
-                margin-right: 20px;
-                margin-left: 20px;
-                font-size: 1.3rem;
-            
  
-            }
-            .principal{    
-                min-height: 75vh; 
+            .principal{ 
+                height: 60vh;
+               
+                h1{
+                    font-size: 2.5rem;
+                    font-weight: 800;
+                    padding-top: 100px;
+                    padding-bottom: 50px;
+                    padding-right: 30px;
+                    padding-left: 30px;
+                }
+                h2{
+                    display: inline-block;
+                    font-size: 1.9rem;
+                    width: 400px;
+                    height: 100px;
+                    padding: 10px;
+                }
             
             }
             .buscador{ 
-                height: 20vh;
-                flex-direction: column;
-               
-                .cuadrotex{
-                    font-size: 0.8rem;
-                    height: 30px;
-                    width: 300px;
-                    margin: 10px 0px;                    
+                height: 30vh;
+                h3{
+                    font-size: 20px;
+                    width: 180px;
+                    text-align: center;
                 }
-                .boton{
-                    height: 25px;
-                    margin: 20px 10px;
-                    font-size: 1.2rem;  
-                }   
+               .formBuscar{
+                    margin-top: 20px;
+                    margin: none;
+                    padding: none;
+
+                    .cuadrotex{
+                        height: 25px;
+                        font-size: 0.8rem;
+                        width: 230px;   
+                        margin: 0;          
+                    }
+                    .boton{
+                        margin: 5px ;
+                        font-size: 1.rem;
+                        padding: 0 10px;  
+
+                    }   
+                }
             }
             .lasmas{
-                display: inline-block;
+           
                 min-height: 90vh;
     
                 h2{
@@ -553,17 +557,15 @@ body{
                     text-align: center;
                     font-size: 1.3rem;
                     height: 10px;
-                   
                     padding: 35px;
                 }
                 h3{
                     font-size: 1.3rem;
                 }
-    
                 .fotos{  
                     .hijo {
-                        width: 250px;
-                        height: 350px;
+                        width: 150px;
+                        height: 250px;
                         padding: 5px;
                     }
                     
